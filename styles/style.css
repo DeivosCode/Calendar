@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(224, 224, 224);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calendar {
+    display: grid;
+    grid-template-columns: 400px 100px;
+    grid-template-rows: 350px;
+    background: #fff;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 80px 270px;
+}
+
+.main__date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__header {
+ font-size: 20px;
+ margin: 0 30px;
+}
+
+.main__arrow {
+    height: 15px;
+}
+
+.aside {
+    background-color: #4930A8;
+}
+
+.main__dates {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    text-align: center;
+    padding: 0 30px 30px;
+    margin-bottom: 30px;
+}
+
+.main__weekdays {
+    opacity: .6;
+}
+
+.date {
+    align-self: center;
+    color: black;
+    text-decoration: none;
+}
+
+.date--last-month {
+    opacity: 0.3;
+}
+
+.date--hover {
+    padding: 6px;
+    border-radius: 50%;
+}
+
+.date--hover:hover {
+    background-color: #8479BD;
+}
+
+.date--hover:focus {
+    background-color: #8479BD;
+}
+
+.date--hover--single {
+    padding: 6px 10px;
+}
+
+.date--last-month .date--hover:hover {
+    background-color: rgb(247, 166, 74);
+}
