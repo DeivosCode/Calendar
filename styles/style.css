@@ -165,3 +165,48 @@ body {
     box-shadow: 0 0 10px rgb(233, 233, 233);
     border-radius: 5px;
 }
+
+@media screen and (max-width: 414px) {
+    .calendar {
+        grid-template-columns: 1fr;
+    }
+
+    .aside {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .main {
+        grid-template-columns: 350px;
+        grid-template-rows: 1fr 270px;
+    }
+
+    .main__dates {
+        padding: 0px 20px;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .main {
+        padding-top: 30px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .container {
+        justify-content: inherit;
+    }
+
+    .calendar {
+        grid-template-rows: 370px 310px;
+    }
+
+    .main {
+        grid-template-rows: 1fr 250px;
+    }
+
+    .main__date {
+        padding: inherit;
+    }
+}
