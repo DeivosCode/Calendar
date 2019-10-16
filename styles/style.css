@@ -166,6 +166,12 @@ body {
     border-radius: 5px;
 }
 
+@media screen and (width: 411px) {
+    .calendar {
+        grid-template-rows: 400px 350px;
+    }
+}
+
 @media screen and (max-width: 414px) {
     .calendar {
         grid-template-columns: 1fr;
@@ -208,5 +214,15 @@ body {
 
     .main__date {
         padding: inherit;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .calendar {
+        grid-template-rows: 350px;
+    }
+
+    .main {
+        grid-template-rows: 90px 300px;
     }
 }
