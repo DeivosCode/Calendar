@@ -91,6 +91,11 @@ body {
     background-color: rgb(247, 166, 74);
 }
 
+.date--last-month .date--hover:focus {
+    background-color: rgb(247, 166, 74);
+}
+
+
 .aside {
     background-color: #4930A8;
     display: flex;
